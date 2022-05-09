@@ -1,0 +1,409 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 100;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+body {
+  background: #f6f9f5;
+  padding-top: 180px;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 100px;
+  background-color: #f6f9f5;
+  z-index: 1;
+}
+
+header .header-logo {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .header-logo img {
+  width: 10rem;
+}
+
+header .header-logo p {
+  text-align: end;
+  color: #a7b548;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li {
+  position: relative;
+  list-style: none;
+}
+
+header ul li a {
+  position: relative;
+  margin: 0 18px;
+  text-decoration: none;
+  color: #a7b548;
+  font-size: 1.6rem;
+  transition: 0.2s;
+}
+
+header ul li a:hover {
+  color: #6eafc4;
+}
+
+.button-general {
+  border-radius: 0;
+  border: none;
+  color: #a7b548;
+  cursor: pointer;
+  padding: 15px;
+  font-size: 1.6rem;
+}
+
+.button-one {
+  background-color: #6eafc4;
+  color: #ffffff;
+  transition: background-color 0.5s;
+}
+
+.button-two {
+  background-color: #a7b548;
+  color: #ffffff;
+  transition: background-color 0.5s;
+}
+
+.button-one:hover {
+  background-color: #a7b548;
+}
+
+.button-two:hover {
+  background-color: #ffffff;
+  color: #a7b548;
+  border: 1px solid #a7b548;
+}
+
+.main-index {
+  padding: 0px 80px;
+}
+
+.banner {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  align-items: center;
+  justify-content: space-between;
+  background: url(../media/Omue-min3.jpg);
+  background-size: cover;
+  padding: 50px;
+}
+
+.banner .banner-mainText {
+  font-size: 7rem;
+  color: #ffffff;
+}
+
+.banner-secondText {
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+.banner-left {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+
+.banner .button-banner {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  transition: 0.2s;
+}
+
+.banner .button-banner:hover {
+  background-color: #ffffff;
+  color: #a7b548;
+}
+
+.banner-right {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.banner-right a {
+  margin: 10px;
+  color: #ffffff;
+}
+
+.quienesSomos {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 70vh;
+}
+
+.quienesSomos-left {
+  padding: 50px;
+}
+
+.quienesSomos-left p {
+  font-family: "Oswald", sans-serif;
+  font-size: 6rem;
+  font-weight: 700;
+  color: #a7b548;
+}
+
+.quienesSomos-right {
+  background-color: #a7b548;
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.quienesSomos-right p {
+  font-size: 2.2rem;
+  color: #ffffff;
+}
+
+.info {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-categories {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.info-categories div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info svg {
+  width: 60px;
+  fill: #6eafc4;
+}
+
+.info div p {
+  font-size: 2rem;
+  color: #a7b548;
+  padding: 20px;
+}
+
+.info input {
+  margin: 50px;
+}
+
+.info2 {
+  height: 60vh;
+  text-align: center;
+}
+
+.info2 p {
+  color: #a7b548;
+  font-size: 1.8rem;
+  padding: 0 200px;
+}
+
+.info2 p:first-child {
+  font-size: 5rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.services {
+  background-color: #a7b548;
+  padding: 50px;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 60px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.services-grid div {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.services-grid div img {
+  border-radius: 100%;
+}
+
+.services-grid div p {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.serviceName {
+  font-size: 2.2rem !important;
+}
+
+#slick {
+  position: relative;
+  height: 50vh;
+}
+
+#slick .slider-content .slider-items {
+  width: 500px;
+  margin: 0 auto;
+  display: block;
+}
+
+#slick .arrow_prev {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  cursor: pointer;
+}
+
+#slick .arrow_next {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  cursor: pointer;
+}
+
+#slick .arrow_prev span {
+  font-size: 25px;
+}
+
+#slick .arrow_next span {
+  font-size: 25px;
+}
+
+#slick .slider-items p {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  color: #a7b548;
+  padding: 150px;
+}
+
+.slick-header {
+  font-size: 6rem;
+  font-weight: 400;
+  text-align: center;
+  padding: 80px 80px 0 80px;
+  color: #a7b548;
+}
+
+footer {
+  padding: 50px;
+  display: flex;
+}
+
+.footer-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-right {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  color: #a7b548;
+  font-size: 1.8rem;
+}
+
+.footer-logo img {
+  margin-right: 20px;
+}
+
+.footer-logo h2 {
+  font-weight: 400;
+}
+
+.footer-info {
+  font-size: 1.8rem;
+  margin-left: 100px;
+  padding-right: 200px;
+  color: #a7b548;
+}
+
+footer ul {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+}
+footer ul li {
+  position: relative;
+  list-style: none;
+}
+
+footer ul li a {
+  position: relative;
+  margin: 0 18px;
+  text-decoration: none;
+  color: #a7b548;
+  font-size: 1.8rem;
+  transition: 0.2s;
+}
+
+footer input {
+  color: #ffffff;
+  background-color: #a7b548;
+}
